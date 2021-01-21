@@ -61,6 +61,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "stage": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/sampleapp/src/environments/environment.ts",
+                  "with": "projects/sampleapp/src/environments/environment.stage.ts"
+                }
+              ]
             }
           }
         },
@@ -72,6 +80,9 @@
           "configurations": {
             "production": {
               "browserTarget": "sampleapp:build:production"
+            },
+            "stage": {
+              "browserTarget": "sampleapp:build:stage"
             }
           }
         },

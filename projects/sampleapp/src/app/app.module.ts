@@ -2,8 +2,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NgxPolygloatModule} from "ngx-polygloat";
-import {UI} from "polygloat/ui";
+import {NgxPolygloatModule} from "@polygloat/ngx";
+import {UI} from "@polygloat/ui";
+import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -12,10 +15,12 @@ import {UI} from "polygloat/ui";
   imports: [
     BrowserModule,
     NgxPolygloatModule.forRoot({
-      apiUrl: "https://app.polygloat.io",
-      apiKey: "ducps94vv7d5pabaibldv2dla4",
+      apiUrl: environment.polygloatApiUrl,
+      apiKey: environment.polygloatApiKey,
       ui: UI
-    })
+    }),
+    NgxPolygloatModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

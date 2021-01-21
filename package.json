@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration=stage",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -19,9 +19,11 @@
     "@angular/platform-browser": "~10.2.2",
     "@angular/platform-browser-dynamic": "~10.2.2",
     "@angular/router": "~10.2.2",
+    "@polygloat/core": "^1.0.0-alpha.21",
+    "@polygloat/ngx": "^1.0.0-alpha.21",
+    "@polygloat/ui": "^1.0.0-alpha.21",
     "@types/react": "^16.9.55",
-    "ngx-polygloat": "file:../ngx-polygloat/dist/ngx-polygloat",
-    "polygloat": "file:../../../polygloat-js",
+    "dotenv": "^8.2.0",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "^0.11.3"
