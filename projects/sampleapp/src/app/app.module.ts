@@ -19,7 +19,6 @@ import { FormsModule } from '@angular/forms';
       apiKey: environment.polygloatApiKey,
       ui: UI
     }),
-    NgxPolygloatModule,
     FormsModule
   ],
   providers: [],

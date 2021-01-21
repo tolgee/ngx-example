@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     this.translateService.get('i_am_translated_placeholder').subscribe(r => this.inputPlaceholderText = r);
     this.translateService.get('hi_i_am_translated_option').subscribe(r => this.optionText = r);
-
   }
 
   set lang(lang: string) {
