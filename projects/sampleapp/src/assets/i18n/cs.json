@@ -1,6 +1,6 @@
 {
-  "Texts in attributes can also be translated with polygloat" : {
-    "" : "Texty v atributech mohou být také pomocí Polygloatu přeloženy."
+  "Texts in attributes can also be translated with tolgee" : {
+    "" : "Texty v atributech mohou být také pomocí Tolgeeu přeloženy."
   },
   "i_am_translated_placeholder" : "Já jsem přeložený placeholder",
   "And also! You can translate text inside options of select!" : "Také můžete překládat texty, které jsou uvnitř možností selectu.",
@@ -8,7 +8,7 @@
   "Strings with parameters can be translated like this:" : "Řetězce s parametry mohou být přeloženy takto:",
   "Peter has n dogs" : "Petr má {{dogsCount}} psů.",
   "Podporujeme lidi v rozvoji podnikání" : "Podporujeme lidi v rozvoji podnikání",
-  "polygloat_example_title" : "Ukázková aplikace - Polygloat",
+  "tolgee_example_title" : "Ukázková aplikace - Tolgee",
   "hello_world" : "Ahoj světe!",
-  "Texts in attributes can also be translated with polygloat." : "Texty v atributech mohou být také přeloženy."
+  "Texts in attributes can also be translated with tolgee." : "Texty v atributech mohou být také přeloženy."
 }

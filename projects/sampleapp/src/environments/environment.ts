@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  polygloatApiUrl: undefined,
-  polygloatApiKey: undefined
+  tolgeeApiUrl: undefined,
+  tolgeeApiKey: undefined
 };
 
 /*

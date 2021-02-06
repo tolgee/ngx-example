@@ -44,5 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-sampleapp.polygloatRestructure.ngx-polygloat-sampleapp.iml
+*.iml
 projects/sampleapp/src/environments/environment.stage.ts

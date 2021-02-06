@@ -1,16 +1,16 @@
 <main>
-  <img src="assets/favicon.svg" class="logo" alt="Polygloat logo"/>
+  <img src="assets/favicon.svg" class="logo" alt="Tolgee logo"/>
 
-  <h1>Angular with Polygloat Example App</h1>
+  <h1>Angular with Tolgee Example App</h1>
 
-  <select [ngModel]="lang" (ngModelChange)="lang = $event.target.value">
+  <select [ngModel]="lang" (ngModelChange)="lang = $event">
     <option value="en">English</option>
     <option value="cs">Česky</option>
   </select>
 
   <h1>{{'hello_world' | translate}}</h1>
 
-  <p>{{'Texts in attributes can also be translated with polygloat\.' | translate}}</p>
+  <p>{{'Texts in attributes can also be translated with tolgee\.' | translate}}</p>
   <input [placeholder]="inputPlaceholderText"/>
   <p>
     {{'And also! You can translate text inside options of select!' | translate}}

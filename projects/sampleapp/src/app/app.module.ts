@@ -2,8 +2,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NgxPolygloatModule} from "@polygloat/ngx";
-import {UI} from "@polygloat/ui";
+import {NgxTolgeeModule} from "@tolgee/ngx";
+import {UI} from "@tolgee/ui";
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 
@@ -14,9 +14,9 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    NgxPolygloatModule.forRoot({
-      apiUrl: environment.polygloatApiUrl,
-      apiKey: environment.polygloatApiKey,
+    NgxTolgeeModule.forRoot({
+      apiUrl: environment.tolgeeApiUrl,
+      apiKey: environment.tolgeeApiKey,
       ui: UI
     }),
     FormsModule
