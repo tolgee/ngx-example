@@ -1,6 +1,6 @@
 import {async, TestBed, tick, fakeAsync} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {NgxPolygloatModule} from '@polygloat/ngx';
+import {NgxTolgeeModule} from '@tolgee/ngx';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +9,7 @@ describe('AppComponent', () => {
         AppComponent
       ],
       imports: [
-        NgxPolygloatModule.forRoot({}),
+        NgxTolgeeModule.forRoot({}),
       ]
     }).compileComponents();
   }));
