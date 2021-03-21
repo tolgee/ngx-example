@@ -16,14 +16,11 @@ export class AppComponent implements OnInit {
   optionText: string;
 
   async ngOnInit(): Promise<void> {
-    this.translateService.onLangChange.subscribe(() => this.refresh());
-    this.refresh()
-  }
-
-  private refresh() {
     this.translateService.get('i_am_translated_placeholder').subscribe(r => this.inputPlaceholderText = r);
     this.translateService.get('hi_i_am_translated_option').subscribe(r => this.optionText = r);
   }
+
+  params = {dogsCount: "5"};
 
   set lang(lang: string) {
     this.translateService.setLang(lang);
