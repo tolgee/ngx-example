@@ -1,0 +1,115 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.28
+    - 14.14.30
+    - 14.14.31
+    - 14.14.32
+    - 14.14.33
+    - 14.14.34
+    - 14.14.35
+    - 14.14.37
+    - 14.14.39
+    - 14.14.41
+    - 15.0.0
+  - dependency-name: "@angular/cli"
+    versions:
+    - 11.2.0
+    - 11.2.1
+    - 11.2.10
+    - 11.2.2
+    - 11.2.3
+    - 11.2.4
+    - 11.2.5
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+    - 11.2.9
+  - dependency-name: "@angular-devkit/core"
+    versions:
+    - 11.2.0
+    - 11.2.1
+    - 11.2.10
+    - 11.2.2
+    - 11.2.3
+    - 11.2.4
+    - 11.2.5
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+    - 11.2.9
+  - dependency-name: "@angular/language-service"
+    versions:
+    - 11.2.10
+    - 11.2.11
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+    - 11.2.9
+  - dependency-name: "@angular-devkit/build-angular"
+    versions:
+    - 0.1102.0
+    - 0.1102.1
+    - 0.1102.10
+    - 0.1102.2
+    - 0.1102.3
+    - 0.1102.4
+    - 0.1102.5
+    - 0.1102.6
+    - 0.1102.7
+    - 0.1102.8
+    - 0.1102.9
+  - dependency-name: "@angular/compiler"
+    versions:
+    - 11.2.10
+    - 11.2.11
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+    - 11.2.9
+  - dependency-name: karma
+    versions:
+    - 6.1.1
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.3.1
+  - dependency-name: typescript
+    versions:
+    - 4.1.5
+    - 4.2.3
+  - dependency-name: "@tolgee/core"
+    versions:
+    - 1.0.0-alpha.25
+    - 1.0.0-alpha.30
+    - 1.0.0-alpha.31
+    - 1.0.0-alpha.32
+    - 1.0.0-alpha.33
+    - 1.0.0-alpha.34
+    - 1.0.0-alpha.35
+  - dependency-name: "@tolgee/ngx"
+    versions:
+    - 1.0.0-alpha.30
+    - 1.0.0-alpha.31
+    - 1.0.0-alpha.32
+    - 1.0.0-alpha.33
+    - 1.0.0-alpha.34
+    - 1.0.0-alpha.35
+  - dependency-name: "@tolgee/ui"
+    versions:
+    - 1.0.0-alpha.25
+    - 1.0.0-alpha.30
+    - 1.0.0-alpha.31
+    - 1.0.0-alpha.32
+  - dependency-name: "@types/react"
+    versions:
+    - 16.14.4
+    - 16.14.5
