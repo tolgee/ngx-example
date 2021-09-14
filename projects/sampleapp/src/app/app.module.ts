@@ -1,28 +1,24 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import {AppComponent} from './app.component';
-import {NgxTolgeeModule} from "@tolgee/ngx";
-import {UI} from "@tolgee/ui";
-import { environment } from '../environments/environment';
-import { FormsModule } from '@angular/forms';
-
+import { AppComponent } from "./app.component";
+import { NgxTolgeeModule } from "@tolgee/ngx";
+import { UI } from "@tolgee/ui";
+import { environment } from "../environments/environment";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     NgxTolgeeModule.forRoot({
       apiUrl: environment.tolgeeApiUrl,
       apiKey: environment.tolgeeApiKey,
-      ui: UI
+      ui: UI,
     }),
-    FormsModule
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

@@ -1,33 +1,39 @@
-import {Component, OnInit} from '@angular/core';
-import {TranslateService} from "@tolgee/ngx";
+import { Component, OnInit } from "@angular/core";
+import { TranslateService } from "@tolgee/ngx";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
-
-  constructor(private translateService: TranslateService) {
-
-  }
-
   inputPlaceholderText: string;
   optionText: string;
+  params = { dogsCount: "5" };
 
-  async ngOnInit(): Promise<void> {
-    this.translateService.get('i_am_translated_placeholder').subscribe(r => this.inputPlaceholderText = r);
-    this.translateService.get('hi_i_am_translated_option').subscribe(r => this.optionText = r);
+  constructor(private translateService: TranslateService) {}
+
+  get lang() {
+    return this.translateService.getCurrentLang();
   }
-
-  params = {dogsCount: "5"};
 
   set lang(lang: string) {
     this.translateService.setLang(lang);
   }
 
-  get lang() {
-    return this.translateService.getCurrentLang()
+  async ngOnInit(): Promise<void> {
+    this.translate();
+    this.translateService.onLangChange.subscribe(() => {
+      this.translate();
+    });
   }
 
+  translate() {
+    this.translateService
+      .get("i_am_translated_placeholder")
+      .subscribe((r) => (this.inputPlaceholderText = r));
+    this.translateService
+      .get("hi_i_am_translated_option")
+      .subscribe((r) => (this.optionText = r));
+  }
 }
