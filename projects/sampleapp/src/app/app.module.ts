@@ -14,7 +14,7 @@ import { FormsModule } from "@angular/forms";
     NgxTolgeeModule.forRoot({
       apiUrl: environment.tolgeeApiUrl,
       apiKey: environment.tolgeeApiKey,
-      ui: UI,
+      ui: environment.tolgeeApiKey && UI,
     }),
     FormsModule,
   ],
