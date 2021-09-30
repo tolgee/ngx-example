@@ -1,5 +1,5 @@
 <main>
-  <img src="assets/favicon.svg" class="logo" alt="Tolgee logo"/>
+  <img src="assets/favicon.svg" class="logo" alt="Tolgee logo" />
 
   <h1>Angular with Tolgee Example App</h1>
 
@@ -11,8 +11,10 @@
   <h1>{{'hello_world' | translate}}</h1>
   <p>{{'Peter has n dogs' | translate:params}}</p>
 
+  <p t key="Peter has n dogs" [params]="params"></p>
+
   <p>{{'Texts in attributes can also be translated with tolgee\.' | translate}}</p>
-  <input [placeholder]="inputPlaceholderText"/>
+  <input [placeholder]="inputPlaceholderText" />
   <p>
     {{'And also! You can translate text inside options of select!' | translate}}
   </p>
@@ -20,4 +22,9 @@
     <option>{{optionText}}</option>
   </select>
 
+  <h1 t key="providing_default_values"></h1>
+
+  <p t key="using_t_with_default" default="This is default"></p>
+
+  <p>{{'pipe_with_default' | translate:'This is default as well!'}}</p>
 </main>
