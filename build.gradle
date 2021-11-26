@@ -5,3 +5,11 @@ idea {
         excludeDirs += file('lib')
     }
 }
+
+apply plugin: TolgeeNodePlugin
+
+tolgeeNpm {
+    library = false
+    linkablePackages = ["@tolgee/core", "ngx-tolgee"]
+}
+

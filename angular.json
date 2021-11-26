@@ -62,10 +62,30 @@
               ]
             },
             "stage": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
               "fileReplacements": [
                 {
                   "replace": "projects/sampleapp/src/environments/environment.ts",
                   "with": "projects/sampleapp/src/environments/environment.stage.ts"
+                }
+              ]
+            },
+            "e2e": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "projects/sampleapp/src/environments/environment.ts",
+                  "with": "projects/sampleapp/src/environments/environment.e2e.ts"
                 }
               ]
             }
@@ -82,6 +102,9 @@
             },
             "stage": {
               "browserTarget": "sampleapp:build:stage"
+            },
+            "e2e": {
+              "browserTarget": "sampleapp:build:e2e"
             }
           }
         },
@@ -119,18 +142,6 @@
             "exclude": [
               "**/node_modules/**"
             ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/sampleapp/e2e/protractor.conf.js",
-            "devServerTarget": "sampleapp:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "sampleapp:serve:production"
-            }
           }
         }
       }
