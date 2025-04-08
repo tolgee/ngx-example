@@ -1,4 +1,4 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { enableProdMode, importProvidersFrom, APP_ID } from '@angular/core';
 import { environment } from './environments/environment';
 import { TOLGEE_INSTANCE, Tolgee, DevTools, NgxTolgeeModule } from '@tolgee/ngx';
 import { FormatIcu } from '@tolgee/format-icu';
@@ -40,7 +40,8 @@ function bootstrap() {
               defaultLanguage: 'en',
             });
         },
-      }
+      },
+      { provide: APP_ID,  useValue: 'serverApp' }
     ]
   })
     // eslint-disable-next-line no-console
