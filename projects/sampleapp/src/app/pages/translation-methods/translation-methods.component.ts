@@ -5,9 +5,9 @@ import { NavbarComponent } from '../../component/navbar/navbar.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'app-translation-methods',
-    templateUrl: './translation-methods.component.html',
-    imports: [NavbarComponent, RouterLink, NgxTolgeeModule]
+  selector: 'app-translation-methods',
+  templateUrl: './translation-methods.component.html',
+  imports: [NavbarComponent, RouterLink, NgxTolgeeModule]
 })
 export class TranslationMethodsComponent implements OnInit, OnDestroy {
   translatedWithoutParamsValue: string;
@@ -18,7 +18,7 @@ export class TranslationMethodsComponent implements OnInit, OnDestroy {
   translatedWithDefaultValueSubscription: Subscription;
   translatedWithParamsValueSubscription: Subscription;
 
-  constructor(private translateService: TranslateService) {}
+  constructor(private translateService: TranslateService) { }
 
   ngOnInit(): void {
     this.translatedWithoutParamsValueSubscription = this.translateService

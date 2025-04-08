@@ -1,11 +1,7 @@
 <div class="background-wrapper">
   <div class="example">
     <app-navbar>
-      <a
-        routerLink="/translation-methods"
-        t
-        key="menu-item-translation-methods"
-      ></a>
+      <a routerLink="/translation-methods" t key="menu-item-translation-methods"></a>
       <a routerLink="/lazy" t key="lazy-module" default="Lazy module"></a>
     </app-navbar>
 
@@ -15,11 +11,8 @@
     </header>
     <section class="items">
       <form class="items__new-item" (submit)="onAdd($event)">
-        <input
-          [(ngModel)]="newItemValue"
-          placeholder="{{ 'add-item-input-placeholder' | translate }}"
-          [ngModelOptions]="{ standalone: true }"
-        />
+        <input [(ngModel)]="newItemValue" placeholder="{{ 'add-item-input-placeholder' | translate }}"
+          [ngModelOptions]="{ standalone: true }" />
         <button type="submit" [disabled]="!newItemValue" class="button">
           <img src="/assets/img/iconAdd.svg" />
           {{ 'add-item-add-button' | translate }}

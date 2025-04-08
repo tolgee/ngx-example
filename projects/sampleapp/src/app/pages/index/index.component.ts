@@ -6,15 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 
 @Component({
-    selector: 'app-index',
-    templateUrl: './index.component.html',
-    imports: [NavbarComponent, RouterLink, NgxTolgeeModule, FormsModule, NgFor]
+  selector: 'app-index',
+  templateUrl: './index.component.html',
+  imports: [NavbarComponent, RouterLink, NgxTolgeeModule, FormsModule, NgFor]
 })
 export class IndexComponent implements OnInit {
   newItemValue: string;
   items: string[] = [];
 
-  constructor() {}
+  constructor() { }
 
   getInitialItems() {
     let items: string[] | undefined = undefined;
