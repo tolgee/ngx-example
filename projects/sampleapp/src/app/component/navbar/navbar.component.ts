@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { LangSelectorComponent } from '../lang-selector/lang-selector.component';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  standalone: false,
+  imports: [LangSelectorComponent],
 })
 export class NavbarComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

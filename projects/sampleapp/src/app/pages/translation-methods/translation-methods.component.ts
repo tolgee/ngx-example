@@ -1,11 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TranslateService } from '@tolgee/ngx';
+import { TranslateService, NgxTolgeeModule } from '@tolgee/ngx';
 import { Subscription } from 'rxjs';
+import { NavbarComponent } from '../../component/navbar/navbar.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-translation-methods',
-  templateUrl: './translation-methods.component.html',
-  standalone: false
+    selector: 'app-translation-methods',
+    templateUrl: './translation-methods.component.html',
+    imports: [NavbarComponent, RouterLink, NgxTolgeeModule]
 })
 export class TranslationMethodsComponent implements OnInit, OnDestroy {
   translatedWithoutParamsValue: string;

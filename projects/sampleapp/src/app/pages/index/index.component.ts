@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarComponent } from '../../component/navbar/navbar.component';
+import { RouterLink } from '@angular/router';
+import { NgxTolgeeModule } from '@tolgee/ngx';
+import { FormsModule } from '@angular/forms';
+import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  standalone: false
+    selector: 'app-index',
+    templateUrl: './index.component.html',
+    imports: [NavbarComponent, RouterLink, NgxTolgeeModule, FormsModule, NgFor]
 })
 export class IndexComponent implements OnInit {
   newItemValue: string;

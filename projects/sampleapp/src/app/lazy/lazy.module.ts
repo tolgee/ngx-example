@@ -6,7 +6,6 @@ import { LazyComponent } from './lazy.component';
 import { NgxTolgeeModule } from '@tolgee/ngx';
 
 @NgModule({
-  declarations: [LazyComponent],
-  imports: [CommonModule, LazyRoutingModule, NgxTolgeeModule],
+    imports: [CommonModule, LazyRoutingModule, NgxTolgeeModule, LazyComponent],
 })
 export class LazyModule {}
