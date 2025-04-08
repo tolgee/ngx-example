@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-translation-methods',
   templateUrl: './translation-methods.component.html',
+  standalone: false
 })
 export class TranslationMethodsComponent implements OnInit, OnDestroy {
   translatedWithoutParamsValue: string;

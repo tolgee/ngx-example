@@ -28,7 +28,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     NgxTolgeeModule,
     FormsModule,
     CommonModule,
